@@ -1,0 +1,21 @@
+{
+  "name": "indecisa---indumentaria-femenina",
+  "version": "1.0.0",
+  "description": "un paquete",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-patch scss sass/origen.scss css/compilado.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GermanT00/Indecisa-IndumentariaFemenina.git"
+  },
+  "author": "German Triano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GermanT00/Indecisa-IndumentariaFemenina/issues"
+  },
+  "homepage": "https://github.com/GermanT00/Indecisa-IndumentariaFemenina#readme"
+}
