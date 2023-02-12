@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -13,13 +8,11 @@ body {
 }
 
 /* Estilos del header */
-
 header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   font-size: 2rem;
-  background: linear-gradient(70deg, rgb(251, 222, 162), rgb(252, 204, 212));
 }
 
 .logo__header {
@@ -36,12 +29,12 @@ header {
 }
 
 .header__navbar a:hover {
-  text-decoration: underline rgb(53, 53, 53);
+  -webkit-text-decoration: underline rgb(53, 53, 53);
+          text-decoration: underline rgb(53, 53, 53);
   font-size: 2rem;
 }
 
 /* Estilos del main */
-
 .contenido__main {
   display: flex;
   flex-direction: column;
@@ -68,9 +61,7 @@ header {
 }
 
 /* Estilos del footer */
-
 .pie {
-  background: linear-gradient(70deg, rgb(251, 222, 162), rgb(252, 204, 212));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,8 +84,91 @@ header {
   padding-inline: 10rem;
 }
 
-/* Estilos de la tienda */
+/* --- @MEDIAS QUERIS :) 425 , 768 y 1024--- */
+@media (max-width: 425px) {
+  /* Estilos del header */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .header__navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__navbar a {
+    font-size: 1rem;
+  }
+  /* Estilos del main */
+  .contenido__main img {
+    width: 20rem;
+  }
+  .contenido__main h2 {
+    font-size: 2rem;
+  }
+  .contenido__main p {
+    font-size: 1rem;
+  }
+  /* Estilos del footer */
+  .pie {
+    text-align: center;
+  }
+  .pie h3 {
+    font-size: 1rem;
+  }
+  .pie i {
+    font-size: 1rem;
+  }
+  /* Estilos de la tienda */
+  .contenido__main__tienda {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__especiales {
+    display: none;
+  }
+  .buscador {
+    display: none;
+  }
+  .contenido__main {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  /* Estilos de la tienda */
+  .contenido__main__tienda {
+    grid-template-columns: 10rem 10rem 10rem;
+    grid-gap: 6rem;
+  }
+  .footer__tienda {
+    font-size: 5px;
+  }
+  .comprar {
+    font-size: 2rem;
+  }
+  .menu__especiales:hover {
+    display: none;
+  }
+  /* Estilos del header */
+  header {
+    align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .logo__header {
+    font-size: 1.5rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 
+/* Estilos de la tienda */
 .contenido__main__tienda {
   display: grid;
   grid-template-columns: 20rem 20rem 20rem;
@@ -149,100 +223,18 @@ header {
   font-size: 2rem;
 }
 
-/* --- @MEDIAS QUERIS :) 425 , 768 y 1024--- */
-
-@media (max-width: 425px) {
-  /* Estilos del header */
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    font-size: 1rem;
-  }
-
-  .header__navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header__navbar a {
-    font-size: 1rem;
-  }
-
-  /* Estilos del main */
-  .contenido__main img {
-    width: 20rem;
-  }
-
-  .contenido__main h2 {
-    font-size: 2rem;
-  }
-
-  .contenido__main p {
-    font-size: 1rem;
-  }
-
-  /* Estilos del footer */
-  .pie {
-    text-align: center;
-  }
-
-  .pie h3 {
-    font-size: 1rem;
-  }
-
-  .pie i {
-    font-size: 1rem;
-  }
-
-  /* Estilos de la tienda */
-  .contenido__main__tienda {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .menu__especiales {
-    display: none;
-  }
-
-  .buscador {
-    display: none;
-  }
-
-  .contenido__main {
-    text-align: center;
-  }
+.encabezado a {
+  font-size: 1.5rem;
+}
+.encabezado div ul li a {
+  font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
-  /* Estilos de la tienda */
-
-  .contenido__main__tienda {
-    grid-template-columns: 10rem 10rem 10rem;
-    grid-gap: 6rem;
-  }
-
-  .footer__tienda {
-    font-size: 5px;
-  }
-
-  .comprar {
-    font-size: 2rem;
-  }
-
-  .menu__especiales:hover {
-    display: none;
-  }
-
-  /* Estilos del header */
-  header{
-   align-items: center;
- }
-@media (max-width: 1024px) {
-  .logo__header {
-    font-size: 1.5rem;
-  }
-}
+.pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  background-color: white;
+}/*# sourceMappingURL=origen.css.map */

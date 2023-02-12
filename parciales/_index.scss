@@ -1,0 +1,21 @@
+.contenido__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  img {
+    border-radius: 1rem;
+    border: $borde;
+  }
+  h2 {
+    padding-top: 2rem;
+    font-size: 3rem;
+  }
+  p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+}

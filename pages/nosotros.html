@@ -15,64 +15,110 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/estilos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/compilado.css" />
     <script
       src="https://kit.fontawesome.com/2794029d4a.js"
       crossorigin="anonymous"
     ></script>
     <title>Indecisa</title>
+    <meta name="description" content="Quienes somos>
+    <meta
+      name="keywords"
+      content="ropa, indumentaria, femenina, informacion, vestimenta, estilo, acerca de"
+    />
   </head>
 
   <body>
     <header>
-      <a class="logo__header" href="../index.html"
-        >Indecisa - Indumentaria femenina</a
-      >
-      <nav class="header__navbar">
-        <a class="header__items" href="../pages/tienda.html">Tienda</a>
-        <a class="header__items" href="../pages/carrito.html">Carrito</a>
-        <a class="header__items" href="../pages/nosotros.html">Nosotros</a>
-        <a class="header__items" href="../pages/preguntasfrecuentes.html"
-          >Preguntas frecuentes</a
-        >
+      <nav class="vw-100 navbar navbar-expand-lg navbar-light bg-light">
+        <div class="encabezado container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            >Indecisa - Indumentaria femenina</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="justify-content-end collapse navbar-collapse"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/preguntasfrecuentes.html"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main>
-      <div class="contenido__main">
-        <img src="../img/logo1.jpeg" alt="" />
-        <h1>Indecisa - Indumentaria para todas nosotras</h1>
-        <p>
-          Somos una marca nueva, con gusto en la moda y en las nuevas
-          tendencias.
-        </p>
-        <h2>Nuestro nombre</h2>
-        <p>
-          Desde chica que me costaba elegir ropa (creo que a todas nos paso o
-          nos pasa jaja) y siempre me considere muy indecisa a la hora de elegir
-          que ponerme.
-        </p>
-        <h2>Horizonte</h2>
-        <p>
-          El horizente de Indecisa es llegar a diseñar ropa para todas nosotras,
-          desde los talles mas chicos a los mas grandes. Considero que todas
-          podemos vestirnos lindas si lo deseamos.
-        </p>
+      <div class="nosotros">
+        <div data-aos="fade-down">
+          <img src="../img/logo1.jpeg" alt="" />
+          <h1>Indecisa - Indumentaria para todas nosotras</h1>
+          <p>
+            Somos una marca nueva, con gusto en la moda y en las nuevas
+            tendencias.
+          </p>
+        </div>
+        <div data-aos="fade-right">
+          <h2>Nuestro nombre</h2>
+          <p>
+            Desde chica que me costaba elegir ropa (creo que a todas nos paso o
+            nos pasa jaja) y siempre me considere muy indecisa a la hora de
+            elegir que ponerme.
+          </p>
+        </div>
+        <div data-aos="fade-left">
+          <h2>Horizonte</h2>
+          <p>
+            El horizente de Indecisa es llegar a diseñar ropa para todas
+            nosotras, desde los talles mas chicos a los mas grandes. Considero
+            que todas podemos vestirnos lindas si lo deseamos.
+          </p>
+        </div>
       </div>
     </main>
 
     <div class="pie">
-      <div class="contenedor">
-        <h3>Seguinos en nuestras redes</h3>
-        <div class="f__iconos">
-          <a href="https://www.instagram.com/indecisa.lp/?next=%2F"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/groups/1851096024938696/user/100002422833342/"
-            ><i class="fab fa-facebook"></i
-          ></a>
-        </div>
+      <div class="pie__estilos">
+        <h3>Indecisa</h3>
+        <a href="#">Trabaja con nosotros</a>
+        <a href="#">Programa de modelos</a>
+        <a href="#">Donde estamos</a>
+      </div>
+      <div class="pie__estilos">
+        <h3>Seguinos en nuestras redes!</h3>
+        <a href="https://www.facebook.com/rochii.piinchaa">Facebook</a>
+        <a href="https://www.instagram.com/indecisa.lp/?next=%2F">Instagram</a>
+        <a href="https://twitter.com/?lang=es">Twitter</a>
+      </div>
+      <div class="pie__estilos">
+        <h3>Desarrollado por</h3>
+        <a href="https://www.instagram.com/trianogerman/?next=%2F"
+          >© German Triano</a
+        >
       </div>
     </div>
     <script
@@ -80,5 +126,11 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>

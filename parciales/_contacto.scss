@@ -1,0 +1,33 @@
+.contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 1rem;
+  &__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $fondo-reverse;
+    height: 25rem;
+    width: 20rem;
+    border: $borde;
+    border-radius: 10px;
+    input {
+      width: 15rem;
+      margin: 1rem;
+      justify-content: space-around;
+      border: 1px solid;
+      border-radius: 10px;
+      background-color: transparent;
+    }
+    textarea {
+      width: 15rem;
+      height: 30rem;
+      border: 1px solid;
+      border-radius: 10px;
+      background-color: transparent;
+    }
+  }
+}

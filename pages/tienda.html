@@ -15,85 +15,106 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/estilos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/compilado.css" />
     <script
       src="https://kit.fontawesome.com/2794029d4a.js"
       crossorigin="anonymous"
     ></script>
     <title>Indecisa</title>
+    <meta name="description" content="Nuestra tienda" />
+    <meta
+      name="keywords"
+      content="ropa, productos, femenina, mujeres, vestimenta, estilo, belleza"
+    />
   </head>
 
   <body>
     <header>
-      <a class="logo__header" href="../index.html"
-        >Indecisa - Indumentaria femenina</a
-      >
-      <nav class="header__navbar">
-        <a class="header__items" href="../pages/tienda.html">Tienda</a>
-        <a class="header__items" href="../pages/carrito.html">Carrito</a>
-        <a class="header__items" href="../pages/nosotros.html">Nosotros</a>
-        <a class="header__items" href="../pages/preguntasfrecuentes.html"
-          >Preguntas frecuentes</a
-        >
+      <nav class="vw-100 navbar navbar-expand-lg navbar-light bg-light">
+        <div class="encabezado container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            >Indecisa - Indumentaria femenina</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="justify-content-end collapse navbar-collapse"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/preguntasfrecuentes.html"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main>
-      <section class="footer__tienda">
-        <div class="buscador">
-          <div class="container-1">
-            <span class="icon"><i class="fa fa-search"></i></span>
-            <input type="search" id="search" placeholder="Buscar..." />
-          </div>
-        </div>
-        <nav class="especiales">
-          <a class="menu__especiales" href="">Coleccion verano</a>
-          <a class="menu__especiales" href="">Coleccion otoño</a>
-          <a class="menu__especiales" href="">Coleccion invierno</a>
-        </nav>
-      </section>
-      <section class="contenido__main__tienda">
-        <div class="articulo">
+      <section class="tienda">
+        <div class="tienda__articulo" data-aos="zoom-out">
           <img src="../img/modelo1.jpg" alt="" />
           <p>Outfit casual 1</p>
           <a class="comprar" href="../pages/tienda.html">Comprar</a>
         </div>
-        <div class="articulo">
+        <div class="tienda__articulo" data-aos="zoom-out">
           <img src="../img/modelo2.jpg" alt="" />
           <p>Outfit casual 2</p>
           <a class="comprar" href="../pages/tienda.html">Comprar</a>
         </div>
-        <div class="articulo">
+        <div class="tienda__articulo" data-aos="zoom-out">
           <img src="../img/modelo3.jpg" alt="" />
           <p>Outfit noche</p>
           <a class="comprar" href="../pages/tienda.html">Comprar</a>
         </div>
-        <div class="articulo">
+        <div class="tienda__articulo" data-aos="zoom-out">
           <img src="../img/remera1.jpg" alt="" />
           <p>Musculosa rosa</p>
           <a class="comprar" href="../pages/tienda.html">Comprar</a>
         </div>
-        <div class="articulo">
+        <div class="tienda__articulo" data-aos="zoom-out">
           <img src="../img/remera2.jpg" alt="" />
           <p>Musculosa blanca larga</p>
           <a class="comprar" href="../pages/tienda.html">Comprar</a>
         </div>
-        <div class="articulo">
+        <div class="tienda__articulo" data-aos="zoom-out">
           <img src="../img/remera3.jpg" alt="" />
           <p>Musculosa blanca corta</p>
           <a class="comprar" href="../pages/tienda.html">Comprar</a>
         </div>
-        <div class="articulo">
+        <div class="tienda__articulo" data-aos="zoom-out">
           <img src="../img/remera4.jpg" alt="" />
           <p>Musculosa verde limon</p>
           <a class="comprar" href="../pages/tienda.html">Comprar</a>
         </div>
-        <div class="articulo">
+        <div class="tienda__articulo" data-aos="zoom-out">
           <img src="../img/remera5.jpg" alt="" />
           <p>Musculosa negra</p>
           <a class="comprar" href="../pages/tienda.html">Comprar</a>
         </div>
-        <div class="articulo">
+        <div class="tienda__articulo" data-aos="zoom-out">
           <img src="../img/remera6.jpeg" alt="" />
           <p>Musculosa beige</p>
           <a class="comprar" href="../pages/tienda.html">Comprar</a>
@@ -102,17 +123,23 @@
     </main>
 
     <div class="pie">
-      <div class="contenedor">
-        <h3>Seguinos en nuestras redes</h3>
-        <div class="f__iconos">
-          <a href="https://www.instagram.com/indecisa.lp/?next=%2F"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/groups/1851096024938696/user/100002422833342/"
-            ><i class="fab fa-facebook"></i
-          ></a>
-        </div>
+      <div class="pie__estilos">
+        <h3>Indecisa</h3>
+        <a href="#">Trabaja con nosotros</a>
+        <a href="#">Programa de modelos</a>
+        <a href="#">Donde estamos</a>
+      </div>
+      <div class="pie__estilos">
+        <h3>Seguinos en nuestras redes!</h3>
+        <a href="https://www.facebook.com/rochii.piinchaa">Facebook</a>
+        <a href="https://www.instagram.com/indecisa.lp/?next=%2F">Instagram</a>
+        <a href="https://twitter.com/?lang=es">Twitter</a>
+      </div>
+      <div class="pie__estilos">
+        <h3>Desarrollado por</h3>
+        <a href="https://www.instagram.com/trianogerman/?next=%2F"
+          >© German Triano</a
+        >
       </div>
     </div>
     <script
@@ -120,5 +147,11 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>

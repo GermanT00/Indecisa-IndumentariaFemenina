@@ -1,1 +1,4 @@
 node_modules/
+figma/
+js/
+package-lock.json

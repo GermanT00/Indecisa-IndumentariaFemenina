@@ -1,0 +1,97 @@
+@media (max-width: 425px) {
+  /*Estilos footer*/
+  .pie {
+    flex-direction: colum;
+    &__estilos {
+      flex-direction: colum;
+      h3 {
+        display: none;
+      }
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+  /*Estilos tienda*/
+  .tienda {
+    display: flex;
+    flex-direction: column;
+  }
+  /*Estilos nosotros*/
+  .nosotros {
+    padding: 1rem 1rem;
+    img {
+      width: 50vw;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  /*Estilos contacto*/
+  .contacto {
+    flex-direction: column;
+    justify-content: space-between;
+    &__mapa {
+      display: none;
+    }
+  }
+  /*Estilos preguntas frecuentes*/
+  .preguntasFrecuentes {
+    padding: 1rem 1rem;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  /* Estilos footer*/
+  .pie {
+    &__estilos {
+      h3 {
+        display: none;
+      }
+    }
+  }
+  /*Estilos tienda*/
+  .tienda {
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: 30rem 30rem;
+  }
+  /*Estilos nosotros*/
+  .nosotros {
+    padding: 1rem 1rem;
+    img {
+      border-radius: 10px;
+      width: 50vw;
+    }
+  }
+  /*Estilos contacto*/
+  .contacto {
+    flex-direction: column;
+  }
+  /*Estilos preguntas frecuentes*/
+  .preguntasFrecuentes {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  /*Estilos nosotros*/
+  .nosotros {
+    padding: 1rem 1rem;
+  }
+  /*Estilos preguntas frecuentes*/
+  .preguntasFrecuentes {
+    padding: 1rem 1rem;
+  }
+}

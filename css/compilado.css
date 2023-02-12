@@ -1,0 +1,270 @@
+.contenido__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+.contenido__main img {
+  border-radius: 1rem;
+  border: 5px solid white;
+}
+.contenido__main h2 {
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+.contenido__main p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tienda {
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem;
+  grid-template-rows: 30rem 30rem 30rem;
+  grid-gap: 2rem;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.tienda__articulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tienda__articulo img {
+  width: 15rem;
+  height: 20rem;
+  border: 5px solid white;
+  box-shadow: 0px 0px 10px;
+}
+.tienda__articulo p {
+  font-size: 1.5rem;
+}
+.tienda__articulo .comprar {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+.tienda__articulo .comprar:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  padding: 1rem;
+}
+
+.encabezado a {
+  font-size: 1.5rem;
+}
+.encabezado div ul li a {
+  font-size: 1.5rem;
+}
+
+.pie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 1rem;
+  background-color: white;
+}
+.pie__estilos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pie__estilos h3 {
+  font-size: 2rem;
+}
+.pie__estilos a {
+  text-decoration: none;
+  color: rgb(78, 77, 77);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+.pie__estilos a:hover {
+  color: black;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 1rem;
+}
+.contacto__formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(70deg, rgb(252, 204, 212), rgb(251, 222, 162));
+  height: 25rem;
+  width: 20rem;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+.contacto__formulario input {
+  width: 15rem;
+  margin: 1rem;
+  justify-content: space-around;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.contacto__formulario textarea {
+  width: 15rem;
+  height: 30rem;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: linear-gradient(70deg, rgb(251, 222, 162), rgb(252, 204, 212));
+  position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.preguntasFrecuentes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 20rem;
+}
+.preguntasFrecuentes h2 {
+  font-size: 3rem;
+}
+.preguntasFrecuentes p {
+  font-size: 2rem;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 20rem;
+}
+.nosotros img {
+  border-radius: 10px;
+}
+.nosotros h1 {
+  font-size: 3rem;
+}
+.nosotros h2 {
+  font-size: 3rem;
+}
+.nosotros p {
+  font-size: 2rem;
+}
+
+@media (max-width: 425px) {
+  /*Estilos footer*/
+  .pie {
+    flex-direction: colum;
+  }
+  .pie__estilos {
+    flex-direction: colum;
+  }
+  .pie__estilos h3 {
+    display: none;
+  }
+  .pie__estilos a {
+    font-size: 1rem;
+  }
+  /*Estilos tienda*/
+  .tienda {
+    display: flex;
+    flex-direction: column;
+  }
+  /*Estilos nosotros*/
+  .nosotros {
+    padding: 1rem 1rem;
+  }
+  .nosotros img {
+    width: 50vw;
+  }
+  .nosotros h1 {
+    font-size: 2rem;
+  }
+  .nosotros h2 {
+    font-size: 2rem;
+  }
+  .nosotros p {
+    font-size: 1.5rem;
+  }
+  /*Estilos contacto*/
+  .contacto {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .contacto__mapa {
+    display: none;
+  }
+  /*Estilos preguntas frecuentes*/
+  .preguntasFrecuentes {
+    padding: 1rem 1rem;
+  }
+  .preguntasFrecuentes h2 {
+    font-size: 2rem;
+  }
+  .preguntasFrecuentes p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  /* Estilos footer*/
+  .pie__estilos h3 {
+    display: none;
+  }
+  /*Estilos tienda*/
+  .tienda {
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: 30rem 30rem;
+  }
+  /*Estilos nosotros*/
+  .nosotros {
+    padding: 1rem 1rem;
+  }
+  .nosotros img {
+    border-radius: 10px;
+    width: 50vw;
+  }
+  /*Estilos contacto*/
+  .contacto {
+    flex-direction: column;
+  }
+  /*Estilos preguntas frecuentes*/
+  .preguntasFrecuentes {
+    padding: 1rem 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  /*Estilos nosotros*/
+  .nosotros {
+    padding: 1rem 1rem;
+  }
+  /*Estilos preguntas frecuentes*/
+  .preguntasFrecuentes {
+    padding: 1rem 1rem;
+  }
+}
+
+/*# sourceMappingURL=compilado.css.map */

@@ -1,0 +1,8 @@
+.pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  background-color: white;
+}/*# sourceMappingURL=pie.css.map */
